@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Trading Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url(images/background.png) no-repeat center center/contain;
+            height: 70vh;
+            color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .menu {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 35px 0;
+        }
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .slider {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+        }
+        .slider img {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.5s ease;
+        }
+        .slider img:hover {
+            opacity: 1;
+        }
+        .slider .title {
+            position: absolute;
+            bottom: 60px;
+            left: 48%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .slider img:hover + .title {
+            opacity: 1;
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .services h2 {
+            margin-bottom: 30px;
+        }
+        .services .service-item {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .buttons .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+        .why-choose-us {
+            background: url(images/imgas.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .why-choose-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .why-choose-us-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="menu">
+    <div class="container d-flex justify-content-center">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h1><b style="font-size:50px;">Welcome to Forex Trading</b></h1>
+    <h5>Trade smarter, grow faster, and achieve financial freedom.</h5>
+</section>
+
+<!-- Buttons Section -->
+<div class="buttons">
+    <a href="#" class="btn btn-primary">Free Trial</a>
+    <a href="#" class="btn btn-success">Start Trading</a>
+</div> 
+
+<!-- Slider -->
+<div class="slider">
+    <div>
+        <img src="images/images.jpg" alt="Forex Trading 1">
+        <div class="title" style="text-align: center;">Practice and Refine:<br>Hone your skills with demo accounts and continuous learning.</div>
+    </div>
+    <div>
+        <img src="images/images3.png" alt="Forex Trading 2">
+        <div class="title" style="text-align: center;">Stay Ahead: <br>Stay updated with market news, analysis, and expert insights.</div>
+    </div>
+    <div>
+        <img src="images/images2.jpg" alt="Forex Trading 3">
+        <div class="title"style="text-align: center;">Manage Risk: <br> Learn how to set stop-losses, limit positions, and avoid common pitfalls.</div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <h3>Market Analysis</h3>
+                <p>Comprehensive tools and insights to make informed trading decisions.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <h3>Real-time Signals</h3>
+                <p>Accurate and timely trading signals for better execution.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <h3>24/7 Support</h3>
+                <p>Always here to help you with your trading journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="about" class="why-choose-us">
+    <div class="why-choose-us-content">
+        <h2>Why Choose Us for Forex Trading?</h2>
+        <p><b>Expertise:</b> Our team of experienced traders and analysts provide expert guidance and support.<br>
+           <b>Security:</b> We prioritize the security of your investments, ensuring your funds are safe.<br>
+           <b>Competitive Rates:</b> Competitive rates and spreads to help maximize your returns.<br>
+           <b>User-Friendly Platform:</b> Easy-to-use platform designed for beginners and experts alike.</p>
+        <p>Join our community of successful forex traders in Malawi and start generating revenue today! Benefit from our expert guidance, reliable brokerage services, and smart trading tools. Take the first step towards financial freedom and start trading with us now!</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="services">
+    <h2>Contact Us</h2>
+    <p>Email: support@forextrading.com | Phone: +265 997-92-86-62</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
